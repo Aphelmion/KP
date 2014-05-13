@@ -1,0 +1,117 @@
+<!-- Created by Admin on 08.05.14. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title i18n-content="pageTitle">Справка</title>
+    <link type="text/css" rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+<div id="help-page" class="page">
+    <h2  i18n-content="aboutTitle">
+        О программе
+    </h2>
+    <div id="container">
+        <div id="accordion">
+            <div class="item">
+                <a href="#">Описание</a>
+                <p>
+                    Редактор геометрических чертежей, созданный студентами кафедры ИТ, БГУИР.
+                    Находится на стадии разработки и уже включает в себя основные геометрические фигуры, из которых возможно составлять различные чертежи.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Авторы</a>
+                <p>
+                    Студенты гр. 021701
+                </p>
+                <p>
+                    Буглак В.
+                </p>
+                <p>
+                    Бахметов А.
+                </p>
+                <p>
+                    Скуратович К.
+                </p>
+                <p>
+                    Студенты гр. 021702
+                </p>
+                <p>
+                    Стадник О.О.
+                </p>
+
+            </div>
+            <div class="item">
+                <a href="#">Горячие клавиши</a>
+                <p>
+                    Ctrl+Z – отменить (назад).
+                </p>
+                <p>
+                    Ctrl+Y – отменить (вперед).
+                </p>
+                <p>
+                    Shift+C – очистка.
+                </p>
+                <p>
+                    Shift+G – сетка.
+                </p>
+                <p>
+                    F1 – справка.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    body {
+        font: 13px Arial, Helvetica, sans-serif;
+        color: snow;
+    }
+    #container {
+        width: 400px;
+        margin: 20px auto;
+    }
+    #accordion .item {
+        width: 400px;
+        height: 30px;
+        overflow: hidden;
+
+        transition: height ease-in-out 500ms;
+        -o-transition: height ease-in-out 500ms;
+        -moz-transition: height ease-in-out 500ms;
+        -webkit-transition: height ease-in-out 500ms;
+
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+
+        margin-bottom: 2px;
+    }
+    #accordion a {
+        display: block;
+        height: 20px;
+        line-height: 20px;
+
+        background: #099;
+        padding: 5px;
+        color: snow;
+        text-decoration: none;
+    }
+    #accordion p {
+        height: 10px;
+        padding: 5px;
+    }
+    #accordion div:hover {
+        height: 200px;
+    }
+    #accordion div:hover a {
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+    }
+</style>
+</html>
